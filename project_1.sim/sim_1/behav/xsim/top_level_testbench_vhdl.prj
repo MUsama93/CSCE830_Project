@@ -1,0 +1,43 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_sim_netlist.vhdl" \
+"../../../../project_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.vhdl" \
+"../../../../project_1.srcs/sources_1/ip/xbip_multadd_1/sim/xbip_multadd_1.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/TEST_ARCHITECTURE_PACKAGE.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/NVME_FRAMEWORK_PACKAGE.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/COMMON_PACKAGE.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/counter.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/fsm_nv_reg_db.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/instant_pwr_calc.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/intermittency_emulator.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/nv_reg.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/nv_reg_emu.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/power_approximation.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/pwr_consumption_val_ROM.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/scaler.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/trace_ROM.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/var_counter.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/vol_arc.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/top_level.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/fsm_nv_reg_cb.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/src/fsm_nv_reg_tb.vhd" \
+"../../../../project_1.srcs/sources_1/ip/xbip_multadd_0/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+"../../../../project_1.srcs/sources_1/ip/xbip_multadd_0/hdl/xbip_multadd_v3_0_vh_rfs.vhd" \
+"../../../../project_1.srcs/sources_1/ip/xbip_multadd_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+"../../../../project_1.srcs/sources_1/ip/xbip_multadd_0/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
+"../../../../project_1.srcs/sources_1/ip/xbip_multadd_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+"../../../../project_1.srcs/sources_1/ip/xbip_multadd_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+"../../../../project_1.srcs/sources_1/ip/xbip_multadd_0/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" \
+"../../../../project_1.srcs/sources_1/ip/xbip_multadd_0/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/test/top_level_testbench.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/test/characterization_testbench.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/test/vol_arc_testbench.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/test/nv_reg_testbench.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/test/instant_pwr_calc_testbench.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/test/intermittency_emulator_testbench.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/test/power_approximation_testbench.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/test/fsm_nv_reg_db_testbench.vhd" \
+"../../../../../../CSCE830_Project/NORM-master/NORM-master/test/nv_reg_emu_testbench.vhd" \
+
+# Do not sort compile order
+nosort

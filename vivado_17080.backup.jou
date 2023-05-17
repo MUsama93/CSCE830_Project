@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May  3 13:16:29 2023
+# Process ID: 17080
+# Current directory: C:/Users/musama2/Documents/11/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32432 C:\Users\musama2\Documents\11\project_1\project_1.xpr
+# Log file: C:/Users/musama2/Documents/11/project_1/vivado.log
+# Journal file: C:/Users/musama2/Documents/11/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/musama2/Documents/11/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source characterization_testbench.tcl
+run 100 ms
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_level_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+close_sim
+launch_simulation
+source top_level_testbench.tcl
+run 100 ms
+close_sim
+launch_simulation
+source top_level_testbench.tcl
+run 100 ms
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 800 us
+current_wave_config {Untitled 3}
+add_wave {{/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1}} 
+run 800 us
+relaunch_sim
+run 800 us
+current_wave_config {Untitled 3}
+add_wave {{/top_level_testbench/top_level_1/INSTANT_PWR_CALC_1/MULTIPLIER_0}} 
+relaunch_sim
+run 800 us
+current_wave_config {Untitled 3}
+add_wave {{/top_level_testbench/top_level_1/PWR_APPROX_1}} 
+relaunch_sim
+run 800 us
+remove_forces { {/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1/ROM_addr} {/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1/ROM_data_out} {/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1/prescaler_clk} {/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1/prescaler_clk_FF} {/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1/counter_en} {/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1/TC_counter} }
+current_wave_config {Untitled 3}
+add_wave {{/top_level_testbench/top_level_1/NV_REG_1}} 
+relaunch_sim
+run 800 us
+relaunch_sim
+run 800 us
+save_wave_config {C:/Users/musama2/Documents/11/project_1/top_level_testbench_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/musama2/Documents/11/project_1/top_level_testbench_behav.wcfg
+set_property xsim.view {C:/Users/musama2/Documents/CSCE830_Project/NORM-master/NORM-master/vivado/NVA_EMULATOR.sim/POWER_APPROXIMATION_TESTBENCH_behav.wcfg C:/Users/musama2/Documents/CSCE830_Project/NORM-master/NORM-master/vivado/INSTANT_PWR_CALC_TESTBENCH_behav.wcfg C:/Users/musama2/Documents/CSCE830_Project/NORM-master/NORM-master/vivado/top_level_testbench_behav.wcfg C:/Users/musama2/Documents/CSCE830_Project/NORM-master/NORM-master/vivado/vol_arc_testbench.wcfg C:/Users/musama2/Documents/CSCE830_Project/NORM-master/NORM-master/vivado/INTERMITTENCY_EMULATOR_TESTBENCH_behav.wcfg C:/Users/musama2/Documents/11/project_1/top_level_testbench_behav.wcfg} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/musama2/Documents/11/project_1/top_level_testbench_behav.wcfg
+source top_level_testbench.tcl
+run 800 us
+close_sim

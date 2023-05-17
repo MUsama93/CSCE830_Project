@@ -1,0 +1,295 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Apr 30 18:42:38 2023
+# Process ID: 29232
+# Current directory: C:/Users/musama2/Documents/11/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30056 C:\Users\musama2\Documents\11\project_1\project_1.xpr
+# Log file: C:/Users/musama2/Documents/11/project_1/vivado.log
+# Journal file: C:/Users/musama2/Documents/11/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/musama2/Documents/11/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_1' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'blk_mem_gen_1' (customized with software release 2020.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'blk_mem_gen_0' (customized with software release 2020.1) has a different revision in the IP Catalog.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/musama2/Documents/11/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/musama2/Documents/11/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'characterization_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/musama2/Documents/11/project_1/project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj characterization_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/musama2/Documents/CSCE830_Project/NORM-master/NORM-master/test/characterization_testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'characterization_testbench'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/musama2/Documents/11/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto f550b77191664481bf8fe88f658a3cd9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L xbip_multadd_v3_0_14 -L secureip -L xpm --snapshot characterization_testbench_behav xil_defaultlib.characterization_testbench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f550b77191664481bf8fe88f658a3cd9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L xbip_multadd_v3_0_14 -L secureip -L xpm --snapshot characterization_testbench_behav xil_defaultlib.characterization_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package xil_defaultlib.nvme_framework_package
+Compiling package xil_defaultlib.test_architecture_package
+Compiling package xil_defaultlib.common_package
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_multadd_v3_0_14.xbip_multadd_v3_0_14_viv_comp
+Compiling package mult_gen_v12_0_15.mult_gen_v12_0_15_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package xbip_multadd_v3_0_14.xbip_multadd_v3_0_14_pkg
+Compiling package xbip_dsp48_multadd_v3_0_6.xbip_dsp48_multadd_v3_0_6_viv_co...
+Compiling package mult_gen_v12_0_15.mult_gen_v12_0_15_viv_comp
+Compiling package unisim.vcomponents
+Compiling package mult_gen_v12_0_15.dsp_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(max=2147483647,init_val...]
+Compiling architecture behavioral of entity xil_defaultlib.power_approximation [power_approximation_default]
+Compiling architecture behavioral of entity xil_defaultlib.pwr_consumption_val_ROM [\pwr_consumption_val_ROM(num_ele...]
+Compiling architecture xilinx of entity mult_gen_v12_0_15.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_15.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_15.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(carryinreg=0,carryinsel...]
+Compiling architecture xilinx of entity mult_gen_v12_0_15.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,areg=2,b_inp...]
+Compiling architecture xilinx of entity mult_gen_v12_0_15.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_15.op_resize [\op_resize(ai_width=31,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_15.dsp [\dsp(c_xdevicefamily="zynq",c_a_...]
+Compiling architecture xilinx of entity xbip_multadd_v3_0_14.multadd_dsp [\multadd_dsp(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_multadd_v3_0_14.xbip_multadd_v3_0_14_viv [\xbip_multadd_v3_0_14_viv(c_xdev...]
+Compiling architecture xilinx of entity xbip_multadd_v3_0_14.xbip_multadd_v3_0_14 [\xbip_multadd_v3_0_14(c_xdevicef...]
+Compiling architecture xbip_multadd_1_arch of entity xil_defaultlib.xbip_multadd_1 [xbip_multadd_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.instant_pwr_calc [instant_pwr_calc_default]
+Compiling architecture behavioral of entity xil_defaultlib.trace_ROM [\trace_ROM(num_elemnts_rom=1570,...]
+Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(max=3,init_value=0,incr...]
+Compiling architecture behavioral of entity xil_defaultlib.scaler [\scaler(prescaler=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(max=1569,init_value=0,i...]
+Compiling architecture behavioral of entity xil_defaultlib.intermittency_emulator [intermittency_emulator_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000001000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010000000000000000...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_0_bindec [blk_mem_gen_0_bindec_default]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_0_bindec_0 [blk_mem_gen_0_bindec_0_default]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101000001100...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_0_blk_mem_gen_mux [blk_mem_gen_0_blk_mem_gen_mux_de...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_mux__parameterized0\ [\blk_mem_gen_0_blk_mem_gen_mux__...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_a="0000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(read_width_a=9,read_wi...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_0_blk_mem_gen_prim_wrapper [blk_mem_gen_0_blk_mem_gen_prim_w...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_0_blk_mem_gen_prim_width [blk_mem_gen_0_blk_mem_gen_prim_w...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized9\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized9\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized10\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized10\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized11\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized11\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized12\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized12\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized13\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized13\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized14\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized14\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized15\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized15\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized16\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized16\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized17\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized17\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized18\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized18\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized0\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized0\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized19\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized19\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized20\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized20\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized21\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized21\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized22\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized22\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized23\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized23\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized24\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized24\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized25\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized25\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized26\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized26\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized27\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized27\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized28\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized28\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized1\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized1\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized29\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized29\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized30\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized30\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized31\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized31\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized32\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized32\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized33\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized33\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized34\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized34\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized35\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized35\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized36\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized36\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized37\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized37\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized38\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized38\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized2\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized2\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized39\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized39\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized40\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized40\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized41\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized41\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized42\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized42\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized43\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized43\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized44\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized44\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized45\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized45\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized46\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized46\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_a="0000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(ram_extension_a="LOWER...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_a="0000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(ram_extension_a="UPPER...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized47\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized47\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized48\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized48\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized3\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized3\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized49\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized49\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized50\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized50\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized51\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized51\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized4\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized4\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized5\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized5\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized6\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized6\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized7\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized7\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized8\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.\blk_mem_gen_0_blk_mem_gen_prim_width__parameterized8\ [\blk_mem_gen_0_blk_mem_gen_prim_...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_0_blk_mem_gen_generic_cstr [blk_mem_gen_0_blk_mem_gen_generi...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_0_blk_mem_gen_top [blk_mem_gen_0_blk_mem_gen_top_de...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_0_blk_mem_gen_v8_4_4_synth [blk_mem_gen_0_blk_mem_gen_v8_4_4...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_0_blk_mem_gen_v8_4_4 [blk_mem_gen_0_blk_mem_gen_v8_4_4...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_0 [blk_mem_gen_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.var_counter [\var_counter(max=18,init_value=0...]
+Compiling architecture behavioral of entity xil_defaultlib.vol_arc [vol_arc_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(doa_reg=1,dob_reg=1,re...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_1_blk_mem_gen_prim_wrapper [blk_mem_gen_1_blk_mem_gen_prim_w...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_1_blk_mem_gen_prim_width [blk_mem_gen_1_blk_mem_gen_prim_w...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_1_blk_mem_gen_generic_cstr [blk_mem_gen_1_blk_mem_gen_generi...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_1_blk_mem_gen_top [blk_mem_gen_1_blk_mem_gen_top_de...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_1_blk_mem_gen_v8_4_4_synth [blk_mem_gen_1_blk_mem_gen_v8_4_4...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_1_blk_mem_gen_v8_4_4 [blk_mem_gen_1_blk_mem_gen_v8_4_4...]
+Compiling architecture structure of entity xil_defaultlib.blk_mem_gen_1 [blk_mem_gen_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.nv_reg_emu [\nv_reg_emu(max_delay_ns=40)\]
+Compiling architecture behavioral of entity xil_defaultlib.nv_reg [\nv_reg(max_delay_ns=40,nv_reg_w...]
+Compiling architecture behavioral of entity xil_defaultlib.characterization_testbench
+Built simulation snapshot characterization_testbench_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/musama2/Documents/11/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/characterization_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/musama2/Documents/11/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/characterization_testbench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Apr 30 18:43:39 2023. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr 30 18:43:39 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 894.980 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '25' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/musama2/Documents/11/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "characterization_testbench_behav -key {Behavioral:sim_1:Functional:characterization_testbench} -tclbatch {characterization_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source characterization_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'characterization_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:31 . Memory (MB): peak = 920.516 ; gain = 33.977
+run 10 us
+run 10 ns
+run 10 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 ms
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:03:20 . Memory (MB): peak = 922.605 ; gain = 2.090
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/characterization_testbench/INSTANT_PWR_CALC_1/output_data}} 
+run 1 ms
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 922.605 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  1 09:16:10 2023...

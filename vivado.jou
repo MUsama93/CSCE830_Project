@@ -1,0 +1,199 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May  5 11:03:47 2023
+# Process ID: 16816
+# Current directory: C:/Users/musama2/Documents/11/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12204 C:\Users\musama2\Documents\11\project_1\project_1.xpr
+# Log file: C:/Users/musama2/Documents/11/project_1/vivado.log
+# Journal file: C:/Users/musama2/Documents/11/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/musama2/Documents/11/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/musama2/Documents/11/project_1/top_level_testbench_behav.wcfg
+source top_level_testbench.tcl
+run 800 us
+relaunch_sim
+run 800 us
+run 800 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/VOL_ARC_1}} 
+run 800 us
+relaunch_sim
+run 800 us
+relaunch_sim
+run 800 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/VOL_ARC_1/V_REG}} 
+run 800 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/VOL_ARC_1}} 
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/VOL_ARC_1}} 
+run 800 us
+relaunch_sim
+run 800 us
+run 800 us
+run 800 us
+relaunch_sim
+run 800 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench}} 
+run 800 us
+relaunch_sim
+run 800 us
+relaunch_sim
+run 800 us
+run 800 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1/voltage_trace_ROM}} 
+run 800 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1/threshold_value}} 
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1/threshold_compared}} 
+run 800 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1/reset_emulator}} 
+run 100 us
+remove_forces { {/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1/threshold_compared[1]} }
+save_wave_config {C:/Users/musama2/Documents/11/project_1/top_level_testbench_behav.wcfg}
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1/threshold_value[0]}} 
+save_wave_config {C:/Users/musama2/Documents/11/project_1/top_level_testbench_behav.wcfg}
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/fsm_nv_reg_thresh_stats}} 
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/PWR_APPROX_1/power_counter_val}} 
+save_wave_config {C:/Users/musama2/Documents/11/project_1/top_level_testbench_behav.wcfg}
+run 100 us
+run 100 us
+run 100 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/INTERMITTENCY_EMULATOR_1/output_comparator}} 
+run 100 us
+run 100 us
+relaunch_sim
+run 300 us
+run 300 us
+run 300 us
+run 300 us
+save_wave_config {C:/Users/musama2/Documents/11/project_1/top_level_testbench_behav.wcfg}
+run 500 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/INSTANT_PWR_CALC_1/MULTIPLIER_0/A}} 
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/INSTANT_PWR_CALC_1/MULTIPLIER_0/B}} 
+run 500 us
+save_wave_config {C:/Users/musama2/Documents/11/project_1/top_level_testbench_behav.wcfg}
+relaunch_sim
+run 500 us
+run 500 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/INSTANT_PWR_CALC_1/PWR_CONSUMPTION_VAL_ROM_1/data_out}} 
+run 500 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/INSTANT_PWR_CALC_1/MULTIPLIER_0/A}} 
+relaunch_sim
+run 300 us
+run 200 us
+relaunch_sim
+run 200 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/INSTANT_PWR_CALC_1/ROM_data_out}} 
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/PWR_APPROX_1/power_state_en}} 
+run 200 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/FSM_NV_REG_1/present_state}} 
+run 200 us
+relaunch_sim
+run 200 us
+run 200 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/PWR_APPROX_1/power_counter_val}} 
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/PWR_APPROX_1/power_state_en}} 
+save_wave_config {C:/Users/musama2/Documents/11/project_1/top_level_testbench_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 200 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/power_counter_val}} 
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/IPC_output_data}} 
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/IPC_val0}} 
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/IPC_val1}} 
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/IPC_val2}} 
+save_wave_config {C:/Users/musama2/Documents/11/project_1/top_level_testbench_behav.wcfg}
+relaunch_sim
+run 200 us
+relaunch_sim
+run 200 us
+relaunch_sim
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/processing_time[1]}} 
+run 200 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 200 us
+relaunch_sim
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/Rd_time}} {{/top_level_testbench/top_level_1/Wr_time}} {{/top_level_testbench/top_level_1/Count_time}} 
+run 200 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/top_level_1/power_counter_val[2]}} 
+relaunch_sim
+run 200 us
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/volatile_power}} 
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/NV_reading}} 
+current_wave_config {top_level_testbench_behav.wcfg}
+add_wave {{/top_level_testbench/NV_writing}} 
+relaunch_sim
+run 200 us
+relaunch_sim
+run 200 us
+relaunch_sim
+run 200 us
+relaunch_sim
+run 200 us
+relaunch_sim
+run all
+run 200 us
+relaunch_sim
+run 200 us
+relaunch_sim
+run 200 us
+relaunch_sim
+run 200 us
+run 200 us
+relaunch_sim
+run 200 us
+relaunch_sim
+relaunch_sim
+run 200 us
+relaunch_sim
+run 200 us
+relaunch_sim
+run 200 us
+relaunch_sim
+run 200 us
+set_property source_mgmt_mode DisplayOnly [current_project]
+reorder_files -before C:/Users/musama2/Documents/CSCE830_Project/NORM-master/NORM-master/src/NVME_FRAMEWORK_PACKAGE.vhd C:/Users/musama2/Documents/CSCE830_Project/NORM-master/NORM-master/src/NVME_FRAMEWORK_PACKAGE.vhd
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/musama2/Documents/11/project_1/top_level_testbench_behav.wcfg}
+close_sim
